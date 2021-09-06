@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>products</title>
+    <link rel="stylesheet" href="../css/cart_items.css" type="text/css">
+    <link rel="stylesheet" href="../css/home.css" type="text/css" >
+    <link rel="stylesheet" href="../css/footer.css" type="text/css">
+    <link rel="stylesheet" href="../css/header.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<%- include("header")%>
+
+<div class="container product-cart" style="margin-bottom: 100px">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="../images/buy-1.jpg" width="100%">
+        </div>
+        <div class="col-md-8">
+            <h1>Red Print T-Shirt For Men</h1>
+            <h4>$50.00</h4>
+            <h3 style="font-weight: 700">Product Details</h3>
+            <p>Table data elements are the data containers of the table.
+                They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
+                They can contain all sorts of HTML elements; text, images
+                Table data elements are the data containers of the table.
+                They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
+                They can contain all sorts of HTML elements; text, images
+            </p>
+
+            <select style="float: left">
+                <option>Selec Size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>S</option>
+            </select>
+            <div>
+                <h4 class="quantity">Quantity:</h4>
+                <input style="margin-left: 15px" onclick="var result = document.getElementById('quantity');
+                var qty = result.value; if( !isNaN(qty) &amp; qty > 1 ) result.value--;return false;" type='button' value='-' />
+                <input id='quantity' min='1' name='quantity' type='text' value='1' />
+                <input onclick="var result = document.getElementById('quantity');
+                 var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' />
+            </div>
+
+            <div style="margin-top: 30px">
+                <button class="Add-To-Cart">Add To Cart</button>
+                <button class="Buy-Now">Buy Now</button>
+            </div>
+        </div>
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<%- include ("footer")%>
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/header-rs.js"></script>
+<script src="../js/header-scorll.js"></script>
+<script src="../js/click-buy.js"></script>
+<script src="../js/main-fn.js"></script>
+</body>
+</html>
