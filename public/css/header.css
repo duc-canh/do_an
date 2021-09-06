@@ -1,3 +1,4 @@
+
 #count-item{
     line-height: 50px;
 }
@@ -16,6 +17,7 @@
     display: flex;
     align-items: center;
     padding: 20px;
+    background: radial-gradient(#fff,#ffd6d6);
 
 }
 nav{
