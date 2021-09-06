@@ -7,7 +7,10 @@
     top: 0;
     background: radial-gradient(#fff,#ffd6d6);
     width: 100%;
-    margin-left: -25px;
+    margin-left: -50px;
+}
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
 }
 .navbar{
     display: flex;
