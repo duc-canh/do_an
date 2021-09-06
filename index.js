@@ -31,3 +31,7 @@ app.get("/products",function (req,res){ // trang chu
     //res.send("Trang chu");
     res.render("products")
 });
+app.get("/account",function (req,res) { // trang chu
+    //res.send("Trang chu");
+    res.render("Account")
+});
