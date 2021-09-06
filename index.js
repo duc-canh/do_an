@@ -10,4 +10,10 @@ app.set("view engine","ejs");
 app.get("/",function (req,res){ // trang chu
     //res.send("Trang chu");
     res.render("home")
+
+
+});
+app.get("/account",function (req,res) { // trang chu
+    //res.send("Trang chu");
+    res.render("Account")
 });
