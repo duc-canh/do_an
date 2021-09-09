@@ -15,14 +15,6 @@ app.get("/cart-items",function (req,res){ // trang chu
     //res.send("Trang chu");
     res.render("cart-items")
 });
-app.get("/header",function (req,res){ // trang chu
-    //res.send("Trang chu");
-    res.render("header")
-});
-app.get("/footer",function (req,res){ // trang chu
-    //res.send("Trang chu");
-    res.render("footer")
-});
 app.get("/product-cart",function (req,res){ // trang chu
     //res.send("Trang chu");
     res.render("product-cart")

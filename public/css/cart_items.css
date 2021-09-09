@@ -1,5 +1,9 @@
+
 body{
     font-family: 'Poppins',sans-serif;
+}
+.navbara{
+    background: radial-gradient(#fff,#ffd6d6);
 }
 cart{
     margin: 80px auto;

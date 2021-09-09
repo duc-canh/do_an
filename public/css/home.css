@@ -25,11 +25,7 @@ body{
     100% {transform: scale(0.4);}
 }
 
-.container{
-    max-width: 1300px;
-    margin: auto;
-    padding: 0 25px;
-}
+
 .row{
     display: flex;
     align-items: center;
@@ -73,10 +69,7 @@ body{
 .btnb:hover{
     background: #563434;
 }
-.header{
-    background: radial-gradient(#fff,#ffd6d6);
-}
-.header .row{
+.headera .row{
     margin-top: 70px;
 }
 
@@ -200,11 +193,7 @@ h4{
 }
 
 
-.menu-icon{
-    width: 28px;
-    margin-left: 20px;
-    display: none;
-}
+
 
 
 /* media query less than 600 */
