@@ -7,20 +7,20 @@
     background: radial-gradient(#fff,#ffd6d6);
 }
 .containera{
-    max-width: 1300px;
+    /*max-width: 1300px;*/
     margin: auto;
-    padding: 0 25px;
+    padding: 25px;
 }
 #count-item{
     line-height: 50px;
 }
-.fixed{
-    position: fixed;
+
+.fixed{    position: fixed;
     z-index: 900;
     top: 0;
     background: radial-gradient(#fff,#ffd6d6);
     width: 100%;
-    margin-left: -28px;
+    margin-left: -25px;
 }
 .navbara{
     display: flex;
