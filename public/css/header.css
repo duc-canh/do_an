@@ -9,13 +9,14 @@
 .containera{
     /*max-width: 1300px;*/
     margin: auto;
-    padding: 25px;
+    padding:0 25px;
 }
 #count-item{
     line-height: 50px;
 }
 
-.fixed{    position: fixed;
+.fixed{
+    position: fixed;
     z-index: 900;
     top: 0;
     background: radial-gradient(#fff,#ffd6d6);
@@ -42,6 +43,9 @@ nav ul li{
 .navbara a{
     text-decoration: none;
     color: #555;
+}
+.navbara a:hover{
+    text-decoration: none;
 }
 p{
     color: #555;

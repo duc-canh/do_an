@@ -29,5 +29,5 @@ app.get("/account",function (req,res) { // trang chu
 });
 app.get("/product-details",function (req,res) { // trang chu
     //res.send("Trang chu");
-    res.render("Product-Details")
+    res.render("product-details")
 });

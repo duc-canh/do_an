@@ -2,11 +2,10 @@
 body{
     font-family: 'Poppins',sans-serif;
 }
-.navbara{
-    background: radial-gradient(#fff,#ffd6d6);
-}
-cart{
-    margin: 80px auto;
+
+.cart{
+    margin: 40px auto;
+
 }
 .cart table{
     width: 100%;
@@ -89,7 +88,7 @@ cart{
     margin-top: 30px;
 }
 .select-sort{
-    float: right;
+    float: left;
     border: 2px solid #ff523b;
     border-radius: 5px;
     font-weight: 700;
