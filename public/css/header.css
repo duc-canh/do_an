@@ -11,6 +11,11 @@
     margin: auto;
     padding:0 25px;
 }
+.containerb{
+    /*max-width: 1300px;*/
+    margin: auto;
+    padding: 0 150px 0 150px;
+}
 #count-item{
     line-height: 50px;
 }

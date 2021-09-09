@@ -1,5 +1,5 @@
 .single-product{
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .single-product .col-2 img{
     padding: 0;
@@ -39,12 +39,6 @@ input:focus{
 .small-img-col{
     flex-basis: 24%;
     cursor: pointer;
-}
-.row-2 h2{
-    padding-left: 150px;
-}
-.row-2 p{
-    padding-left: 200px;
 }
 
 /*compare products*/
