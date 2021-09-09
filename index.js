@@ -27,3 +27,7 @@ app.get("/account",function (req,res) { // trang chu
     //res.send("Trang chu");
     res.render("Account")
 });
+app.get("/product-details",function (req,res) { // trang chu
+    //res.send("Trang chu");
+    res.render("Product-Details")
+});
