@@ -6,7 +6,9 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-
+.row a{
+    text-decoration: none;
+}
 .img-product-fly{
     position: absolute;
     z-index: 10000000;
