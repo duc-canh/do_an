@@ -40,7 +40,42 @@ input:focus{
     flex-basis: 24%;
     cursor: pointer;
 }
-
+.col-6 textarea:hover{
+    resize: none;
+    border: 2px solid red;
+}
+.col-6 textarea{
+    width: 700px;
+    height: 70px;
+    font-size: 20px;
+    margin-top: 20px;
+    border: 2px solid red;
+    font-family: "Poppins" , sans-serif;
+}
+.col-6 button{
+    height: 50px;
+}
+.col-10{
+    font-size: 20px;
+    padding-left: 103px;
+}
+.rate {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left;
+    color: #ff523b;
+}
+.rate > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+    font-size: 30px;
+}
+.rate > span:hover:before,
+.rate > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+}
 /*compare products*/
 /*.row-1{*/
 /*    display: flex;*/

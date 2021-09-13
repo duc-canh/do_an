@@ -31,7 +31,7 @@ app.get("/product-details",function (req,res) { // trang chu
     //res.send("Trang chu");
     res.render("product-details")
 });
-app.get("/contact-us",function (req,res) { // trang chu
+app.get("/contact",function (req,res) { // trang chu
     //res.send("Trang chu");
     res.render("contact")
 });
