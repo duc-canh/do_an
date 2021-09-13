@@ -58,6 +58,7 @@ body{
 }
 .btn:hover{
     background: #563434;
+    color: white;
 }
 .btnb{
     display: inline-block;
@@ -70,7 +71,9 @@ body{
 }
 .btnb:hover{
     background: #563434;
+    color: white;
 }
+
 .headera .row{
     margin-top: 70px;
 }
