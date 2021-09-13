@@ -29,6 +29,10 @@ $(document).on("click",".btn-buy-now",function (e){
              $(document).find(".btn-buy-now").removeClass("disable");
          },1000);
     },500);
+
+      // var namesp = parent.find("h4").text();
+      // var price = parent.find("sp").text();
+      // alert(price);
 });
 // $(document).on("click",".btn-buy-now",function (e){
 //     e.preventDefault();//(1)xóa các sự kiện định dạng từ trước
