@@ -120,13 +120,55 @@
     <div class="comment">
         <h2 class="titlepd">Rated</h2>
         <h3>Leave Us a Comment</h3>
-        <form>
-            <textarea placeholder="Add Your Comment"></textarea>
-            <div class="btncm">
-                <input type="submit" value="Comment">
-                <button>Cancel</button>
+        <section id="wrapper">
+            <div class="box">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="comment">
+                            <p v-for="items in item" v-text="items"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <textarea type="text" class="input" placeholder="Your Comment Here" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                        <button v-on:click="addItem()" class='btn' type="submit">Comment</button>
+                    </div>
+                </div>
             </div>
-        </form>
+        </section>
+
+
+
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+        <script>
+            $(document).ready(function(){
+
+                $(".btn-box").on('click', function(){
+                    $(".comment").addClass("afterText");
+                });
+                $("textarea").on('keyup.enter', function(){
+                    $(".comment").addClass("afterText");
+                });
+            });
+
+            new Vue({
+                el: "#wrapper",
+                data:{
+                    newItem: '',
+                    item: [],
+                },
+                methods:{
+                    addItem  (){
+                        this.item.push(this.newItem);
+                        this.newItem = "";
+                    }
+                }
+
+            });
+        </script>
     </div>
 </div>
 <!--Featured product-->
