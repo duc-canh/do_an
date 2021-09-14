@@ -50,9 +50,14 @@ input:focus{
     font-size: 20px;
     margin-top: 20px;
     border: 2px solid red;
+    font-family: "Poppins" , sans-serif;
 }
 .col-6 button{
-
+    height: 50px;
+}
+.col-10{
+    font-size: 20px;
+    padding-left: 103px;
 }
 /*compare products*/
 /*.row-1{*/
