@@ -29,7 +29,7 @@ app.get("/account",function (req,res) { // trang chu
 });
 app.get("/product-details",function (req,res) { // trang chu
     //res.send("Trang chu");
-    res.render("product-details")
+    res.render("Product-Details")
 });
 app.get("/contact",function (req,res) { // trang chu
     //res.send("Trang chu");
