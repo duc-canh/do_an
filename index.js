@@ -35,7 +35,3 @@ app.get("/contact-us",function (req,res) { // trang chu
     //res.send("Trang chu");
     res.render("contact")
 });
-app.get("/cart2",function (req,res) { // trang chu
-    //res.send("Trang chu");
-    res.render("cart2")
-});
