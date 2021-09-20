@@ -26,6 +26,7 @@ let products = [
 for (let i=0; i<carts.length;i++){
     carts[i].addEventListener('click', () =>{
         cartNumbers(products[i]);
+        totalCost(products[i])
     })
 }
 
@@ -51,4 +52,44 @@ function  cartNumbers(product){
         document.querySelector('#count-item span').textContent = 1;
     }
 }
+function totalCost(product){
+    // console.log("th prd is",product.price);
+    let cartCost=localStorage.getItem('totalCost');
+    console.log("price is",cartCost);
+    console.log(typeof cartCost);
+
+    if(cartCost != null){
+        cartCost = parseInt(cartCost);
+        localStorage.setItem("totalCost", cartCost + product.price);
+
+    } else{
+        localStorage.setItem("totalCost", product.price);
+
+    }
+}
+
+
+
+function displayCart(){
+    let cartItems = localStorage.getItem("cartNumbers");
+    cartItems = JSON.parse(cartItems);
+    let productContainer = document.querySelector
+    (".products-container");
+
+    console.log(cartItem);
+    if(cartItems && productContainer ){
+        productContainer.innerHTML= '';
+        Object.values(cartItems).map(item =>{
+            productContainer.innerHTML += `
+            <div class="product>
+                <ion-icon name="close-circle-outline"></ion-icon>
+                <img src="./images/${item.tag}.jpg">
+                <span>${item.name}</span>
+                </div>
+            `
+        });
+
+    }
+}
 onLoadCartNumbers();
+displayCart();

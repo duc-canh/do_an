@@ -7,21 +7,6 @@ app.listen(port,function (){
 app.use(express.static("public"));
 app.set("view engine","ejs");
 
-var mssql = require("mssql");
-
-var ConnectionConfig = {
-    server: 'DESKTOP-V4TRK5T',
-    authentication: { type: 'default', options: { userName: 'sa', password: '123a' } },
-    database:'garments',
-    options: { encrypt:false }}
-
-// ket noi voi database
-mssql.connect(ConnectionConfig,function (err){
-    if(err) console.log(err);
-    else console.log("connected database!");
-})
-var sql = new mssql.Request();
-
 app.get("/",function (req,res){ // trang chu
     //res.send("Trang chu");
     res.render("home")
@@ -53,17 +38,4 @@ app.get("/contact",function (req,res) { // trang chu
 app.get("/about",function (req,res) { // trang chu
     //res.send("Trang chu");
     res.render("about")
-});
-
-
-app.get("/khach-hang",function (req,res){
-    // can lay danh sach khach hang
-    var kw = req.query.keyword||"";
-    var txt_sql = "select * from eSanPham where TenSP like '%"+kw+"%';";
-    sql.query(txt_sql,function (err,rs){ // callback
-        if(err) res.status(404).send('Not found?');
-        else res.render("sanpham",{
-            hanghoa:rs.recordset
-        });// rows.recordset : 1 array, mỗi element là 1 object từ table
-    })
 });

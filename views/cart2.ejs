@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/cart_items.css" type="text/css">
+    <link rel="stylesheet" href="../css/home.css" type="text/css" >
+    <link rel="stylesheet" href="../css/footer.css" type="text/css">
+    <link rel="stylesheet" href="../css/header.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+<div class="headera">
+    <div class="containera">
+        <%- include("header")%>
+    </div>
+</div>
+
+<div class="container cart" style="margin-bottom: 100px">
+
+
+    <div class="products-container">
+        <div class="products">
+
+        </div>
+
+    </div>
+
+<!--    <table>-->
+<!--        <tr>-->
+<!--            <th>Product</th>-->
+<!--            <th>Quantity</th>-->
+<!--            <th>Subtotal</th>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <div class="cart-info">-->
+<!--                    <img src="../images/buy-1.jpg">-->
+<!--                    <div>-->
+<!--                        <p>Red Tshirt Men</p>-->
+<!--                        <small>Price: $50.00</small>-->
+<!--                        </br>-->
+<!--                        <a href="#">Remove</a>-->
+
+
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </td>-->
+<!--            <td><input type="number" value="1"></td>-->
+<!--            <td style="font-weight: 700">$50.00</td>-->
+<!--        </tr>-->
+
+
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <div class="cart-info">-->
+<!--                    <img src="../images/buy-1.jpg">-->
+<!--                    <div>-->
+<!--                        <p>Red Tshirt Men</p>-->
+<!--                        <small>Price: $50.00</small>-->
+<!--                        </br>-->
+<!--                        <a href="#">Remove</a>-->
+
+
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </td>-->
+<!--            <td><input type="number" value="1"></td>-->
+<!--            <td style="font-weight: 700">$50.00</td>-->
+<!--        </tr>-->
+
+
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <div class="cart-info">-->
+<!--                    <img src="../images/buy-1.jpg">-->
+<!--                    <div>-->
+<!--                        <p>Red Tshirt Men</p>-->
+<!--                        <small>Price: $50.00</small>-->
+<!--                        </br>-->
+<!--                        <a href="#">Remove</a>-->
+
+
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </td>-->
+<!--            <td><input type="number" value="1"></td>-->
+<!--            <td style="font-weight: 700">$50.00</td>        </tr>-->
+<!--    </table>-->
+
+    <div class="total-price">
+
+        <table>
+            <tr>
+                <td style="font-weight: 700">Subtotal:</td>
+                <td style="font-weight: 700">$150.00</td>
+            </tr>
+            <tr>
+                <td style="font-weight: 700">Transport Fee:</td>
+                <td style="font-weight: 700">$15.00</td>
+            </tr>
+            <tr>
+                <td style="font-weight: 700">Total:</td>
+                <td style="font-weight: 700">$165.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="submit-price">Submit</button>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+<%- include("footer")%>
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/header-rs.js"></script>
+<script src="../js/header-scorll.js"></script>
+<script src="../js/click-buy.js"></script>
+<script src="../js/main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

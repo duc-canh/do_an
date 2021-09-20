@@ -219,12 +219,22 @@ h4{
     background-color: #ff523b;
     border-radius: 10px;
     text-align: center;
-    width: 110px;
+    width: 60%;
     height: 40px;
-    font-size: 22px;
-
+    font-size: 18px;
 }
-
+.button-remove{
+    background-color: #ff523b;
+    color: white;
+    border-radius: 5px;
+    width: 60px;
+    height: 25px;
+    font-size: 12px;
+}
+.button-remove:focus{
+    outline: 0;
+    box-shadow: none;
+}
 
 
 /*--------------PROCUCTS-------------*/
@@ -254,8 +264,10 @@ h4{
     border-radius: 5px;
     font-weight: normal;
     height: 28px;
-    margin-right: -993px;
+    margin-right: -945px;
     background-color: white;
+    width: 170px;
+    text-align: center;
 }
 .select-sort:focus{
     outline: none;
@@ -298,7 +310,7 @@ h4{
 .see-more{
     clear: both;
     color: #ff523b;
-    padding-left: 500px;
+    padding-left: 530px;
     padding-top: -10px;
     cursor: pointer;
     font-weight: 600;
@@ -310,6 +322,18 @@ h4{
     font-weight: bolder;
     color: #ff523b;
 
+}
+/*.products img{*/
+/*    border: 1px dotted #ff523b;*/
+/*}*/
+.crossbar{
+    color: #ff523b;
+    background: #ff523b;
+    width: 60%;
+    height: 3px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
 }
 
 /*-------Detail of one Product------*/
