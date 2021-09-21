@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>your results</title>
@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="../css/cart_items.css" type="text/css">
     <link rel="stylesheet" href="../css/footer.css" type="text/css">
     <link rel="stylesheet" href="../css/header.css" type="text/css">
+    <style>
+        .col-4 a{
+            color: #3d3d3d;
+        }
+    </style>
 </head>
 <body>
 
@@ -42,7 +47,7 @@
                 <div class="col-4 col-md-3">
 
                     <img src="<%= hanghoa[i].Img %>">
-                    <h4><%= hanghoa[i].TenSP %></h4>
+                    <h4><a href="/product-details?id=<%= hanghoa[i].ID %>"> <%= hanghoa[i].TenSP %></a></h4>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>

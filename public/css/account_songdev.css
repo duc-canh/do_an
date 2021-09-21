@@ -74,7 +74,7 @@
     top: 100px;
     transition: transform 1s;
 }
-form input{
+.account-page form input{
     width: 90%;
     height: 30px;
     margin: 10px 0;
