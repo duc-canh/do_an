@@ -214,14 +214,17 @@ h4{
 .decrease{
     color: #ff523b;
 }
-.submit-price{
+.check_out{
     color: white;
     background-color: #ff523b;
     border-radius: 10px;
-    text-align: center;
-    width: 60%;
+    width: 45%;
     height: 40px;
     font-size: 18px;
+}
+.check_out2{
+    color: #ff523b;
+    font-weight: bolder;
 }
 .button-remove{
     background-color: #ff523b;
@@ -362,7 +365,7 @@ h4{
     float: left;
     margin-left: 10px;
 }
-.product-cart select,input:focus{
+ select,input:focus{
     outline: none;
 }
 .Add-To-Cart{
@@ -380,4 +383,136 @@ h4{
     height: 34px;
     width: 170px;
     margin-left: 10px;
+}
+
+/*---------CHECK OUT DETAIL----------*/
+.billing_address{
+    border-radius: 15px;
+    background-color: #eeeeee;
+}
+.bd_in input{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px;
+}
+.input_address{
+    width: 200%;
+    margin-bottom: 15px;
+    border: 1px;
+    height: 30px;
+    border-radius: 5px;
+}
+.bd_in h4{
+    font-weight: 700;
+    font-size: 12px;
+}
+.billing_address select{
+    border: 1px;
+    border-radius: 5px;
+    margin-left: 3px;
+    height: 30px;
+}
+/*.save_address{*/
+/*    text-align: center;*/
+/*    margin-top: 25px;*/
+/*    margin-bottom: 15px;*/
+/*    align-items: center;*/
+/*    border-radius: 5px;*/
+/*    background-color: white;*/
+/*    border: 1px solid white;*/
+/*    font-weight: bold;*/
+/*    width: 100px;*/
+/*    height: 25px;*/
+/*}*/
+.save_info{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.save_info_text{
+    font-weight: normal;
+}
+.shipping{
+    margin-left: 10px;
+    background-color: #eeeeee;
+    float: left;
+    border-radius: 15px;
+}
+
+.method input[type="radio"]{
+    display: none;
+}
+.method label{
+    position: relative;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 13px;
+}
+/*.shipping_method label:before{*/
+/*    content: "";*/
+/*    height: 15px;*/
+/*    width: 15px;*/
+/*    border: 2px solid black;*/
+/*    border-radius: 50%;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+.method input[type="radio"]:checked + label{
+    background-color: #fcecd4;
+}
+/*.shipping_method input[type="radio"]:checked + label:before{*/
+/*    height: 16px;*/
+/*    width: 16px;*/
+/*    border: 1px solid white;*/
+/*    background-color: white;*/
+/*}*/
+.payment{
+    background-color: #eeeeee;
+    margin-left: 10px;
+    border-radius: 15px;
+
+}
+.voucher{
+    font-weight: 700;
+}
+.enter_code{
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 30px;
+    width: 55%;
+    font-size: 12px;
+}
+.apply{
+    background-color: #ff523b;;
+    height: 30px;
+    border-radius: 5px;
+    width: 80px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    /*border: 1px solid #ff0000;*/
+}
+.bar{
+    clear: both;
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+}
+.order{
+    clear: both;
+    text-align: center;
+}
+.order_now{
+    background-color: #ff523b;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    font-weight: bolder;
+    color: white;
+
 }

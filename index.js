@@ -54,6 +54,10 @@ app.get("/about",function (req,res) { // trang chu
     //res.send("Trang chu");
     res.render("about")
 });
+app.get("/checkout",function (req,res) { // trang chu
+    //res.send("Trang chu");
+    res.render("checkout_detail")
+});
 var mssql = require("mssql");
 
 var ConnectionConfig = {
