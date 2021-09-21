@@ -9,7 +9,14 @@ app.set("view engine","ejs");
 
 app.get("/",function (req,res){ // trang chu
     //res.send("Trang chu");
-    res.render("home")
+    var txt_sql = "select * from eSanPham;";
+    sql.query(txt_sql,function (err,rs){ // callback
+        if(err) res.status(404).send('Not found?');
+        else res.render("home",{
+            hanghoa:rs.recordset
+        });// rows.recordset : 1 array, mỗi element là 1 object từ table
+    })
+    //res.render("home")
 });
 app.get("/cart-items",function (req,res){ // trang chu
     //res.send("Trang chu");
@@ -28,8 +35,16 @@ app.get("/account",function (req,res) { // trang chu
     res.render("Account")
 });
 app.get("/product-details",function (req,res) { // trang chu
-    //res.send("Trang chu");
-    res.render("Product-Details")
+    var id = req.query.id;
+    var txt_sql = "select * from eSanPham where ID = "+id+";";
+    sql.query(txt_sql,function (err,rs){
+        if(err) res.send(err);
+        else if(rs.recordset.length > 0){
+            res.render("Product-Details",{
+                p:rs.recordset[0]
+            })
+        }else res.status(404).send('Not found?');
+    })
 });
 app.get("/contact",function (req,res) { // trang chu
     //res.send("Trang chu");
@@ -65,3 +80,4 @@ app.get("/khach-hang",function (req,res){
         });// rows.recordset : 1 array, mỗi element là 1 object từ table
     })
 });
+
