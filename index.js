@@ -28,7 +28,15 @@ app.get("/product-cart",function (req,res){ // trang chu
 });
 app.get("/products",function (req,res){ // trang chu
     //res.send("Trang chu");
-    res.render("products")
+    var kw = req.query.abc||"";
+    var txt_sql = "select * from eSanPham where TenSP like '%"+kw+"%';";
+    sql.query(txt_sql,function (err,rs){ // callback
+        if(err) res.status(404).send('Not found?');
+        else res.render("products",{
+            hanghoa:rs.recordset
+        });// rows.recordset : 1 array, mỗi element là 1 object từ table
+    })
+    //res.render("products")
 });
 app.get("/account",function (req,res) { // trang chu
     //res.send("Trang chu");

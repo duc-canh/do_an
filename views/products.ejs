@@ -21,9 +21,8 @@
 </div>
 
 <div class="container products" style="margin-bottom: 100px">
-
     <div class="row">
-        <select class="select-sort">
+        <select class="select-sort" name="abc">
             <option>Default Sorting</option>
             <option>Sort By Adidas</option>
             <option>Sort By Nike</option>
@@ -33,530 +32,139 @@
             <option>Sort By Rating</option>
         </select>
     </div>
-
+</div>
+<div class="container products" style="margin-bottom: 100px">
     <h2 style="font-weight: bolder">TOP SELLER</h2>
-    <div class="row">
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
+    <div class="col-md-12">
+        <% for(i=0;i<8;i++){ %>
+            <div class="">
+                <div class="col-4 col-md-3">
+
+                    <img src="<%= hanghoa[i].Img %>">
+                    <h4><a href="/product-details?id=<%= hanghoa[i].ID %>"> <%= hanghoa[i].TenSP %></a></h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p><%= hanghoa[i].Gia %></p>
+                    <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
+
+                </div>
             </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
+        <%} %>
     </div>
     <a class="see-more">See More...</a>
     <div class="row crossbar"></div>
+</div>
 
+<div class="container products" style="margin-bottom: 100px">
+    <h2 style="font-weight: bolder">Adidas</h2>
+    <div class="col-md-12">
+        <% for(i=2;i<6;i++){ %>
+            <div class="">
+                <div class="col-4 col-md-3">
 
+                    <img src="<%= hanghoa[i].Img %>">
+                    <h4><a href="/product-details?id=<%= hanghoa[i].ID %>"> <%= hanghoa[i].TenSP %></a></h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p><%= hanghoa[i].Gia %></p>
+                    <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
 
-    <h2 style="font-weight: bolder">ADIDAS</h2>
-
-    <div class="row">
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
+                </div>
             </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
+        <%} %>
     </div>
     <a class="see-more">See More...</a>
     <div class="row crossbar"></div>
+</div>
+<div class="container products" style="margin-bottom: 100px">
+    <h2 style="font-weight: bolder">Nike</h2>
+    <div class="col-md-12">
+        <% for(i=6;i<10;i++){ %>
+            <div class="">
+                <div class="col-4 col-md-3">
 
-    <h2 style="font-weight: bolder">NIKE</h2>
+                    <img src="<%= hanghoa[i].Img %>">
+                    <h4><a href="/product-details?id=<%= hanghoa[i].ID %>"> <%= hanghoa[i].TenSP %></a></h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p><%= hanghoa[i].Gia %></p>
+                    <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
 
-    <div class="row">
-
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
+                </div>
             </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
+        <%} %>
     </div>
-    <div class="row">
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-    </div>
-
     <a class="see-more">See More...</a>
     <div class="row crossbar"></div>
+</div>
 
+<div class="container products" style="margin-bottom: 100px">
+    <h2 style="font-weight: bolder">Dior</h2>
+    <div class="col-md-12">
+        <% for(i=1;i<5;i++){ %>
+            <div class="">
+                <div class="col-4 col-md-3">
 
-    <h2 style="font-weight: bolder">DIOR</h2>
+                    <img src="<%= hanghoa[i].Img %>">
+                    <h4><a href="/product-details?id=<%= hanghoa[i].ID %>"> <%= hanghoa[i].TenSP %></a></h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p><%= hanghoa[i].Gia %></p>
+                    <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
 
-    <div class="row">
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
+                </div>
             </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-1.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
+        <%} %>
     </div>
-    <div class="row">
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-
-        <div class="col-4">
-            <img src="../images/buy-2.jpg">
-            <h4>Pro Tshirt Men</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-o"></i>
-            </div>
-            <p>$50.00</p>
-            <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
-
-        </div>
-    </div>
-
     <a class="see-more">See More...</a>
+    <div class="row crossbar"></div>
+</div>
 
+<div class="container products" style="margin-bottom: 100px">
+    <h2 style="font-weight: bolder">Gucci</h2>
+    <div class="col-md-12">
+        <% for(i=2;i<6;i++){ %>
+            <div class="">
+                <div class="col-4 col-md-3">
 
+                    <img src="<%= hanghoa[i].Img %>">
+                    <h4><a href="/product-details?id=<%= hanghoa[i].ID %>"> <%= hanghoa[i].TenSP %></a></h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p><%= hanghoa[i].Gia %></p>
+                    <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
 
-
-    <!--    <div class="page-button">-->
-<!--        <span>1</span>-->
-<!--        <span>2</span>-->
-<!--        <span>3</span>-->
-<!--        <span>4</span>-->
-<!--        <span>&#8594</span>-->
-<!--    </div>-->
-
+                </div>
+            </div>
+        <%} %>
+    </div>
+    <a class="see-more">See More...</a>
+    <div class="row crossbar"></div>
 </div>
 
 <%- include("footer")%>
