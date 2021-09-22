@@ -23,7 +23,7 @@
     <h2 class="check_out2">CheckOut</h2>
     <p>Fill in form below to complete your purchasel</p>
     <div class="billing_address col-md-4">
-        <h4>1.Billing Address</h4>
+        <h4 style="font-weight: bolder">1.Billing Address</h4>
 
         <div class="bd_in">
             <form>
@@ -45,7 +45,7 @@
                 </div>
         </div>
                 <div style="float:left">
-                    <h4>Address*</h4>
+                    <h4 class="address">Address*</h4>
                     <input class="input_address" type="text" required>
 
                 </div>
@@ -79,60 +79,62 @@
                         <option>Hung Hoa</option>
                     </select>
                     <div class="save_info">
-                        <input type="radio">
-                        <label class="save_info_text">Save contact information for later</label>
+                        <input type="checkbox"> Save contact info for later
                     </div>
-
-
                 </div>
-
-
             </form>
     </div>
 
     <div class="shipping method col-md-3">
-            <h4>2.Shipping Method</h4>
+            <h4 style="font-weight: bolder">2.Shipping Method</h4>
 
             <input type="radio" name="shipping" id="ems" checked>
-            <label for="ems">(EMS) Express Mail Service ($20.00)</label><br>
+            <label for="ems">(EMS) Express Mail Service ($20.00)</label>
             <input type="radio" name="shipping" id="ghn">
-            <label for="ghn">(GHN) Giao Hang Nhanh ($20.00)</label><br>
+            <label for="ghn">(GHN) Giao Hang Nhanh ($20.00)</label>
             <input type="radio" name="shipping" id="vnpost">
             <label for="vnpost">VN Post ($15.00)</label><br>
         </div>
 
-
     <div class="payment method col-md-4">
-        <h4>3.Payment Method</h4>
+        <h4 style="font-weight: bolder">3.Payment Method</h4>
         <input type="radio" name="payment" checked="checked" id="cash">
-        <label for="cash">Cash On Delivery</label>
+        <label for="cash">Cash On Delivery
+            <i class="fas fa-money-bill-wave fa-2x"></i>
+        </label>
         <input type="radio" name="payment" id="credit">
-        <label for="credit" >Credit Card</label>
-            <!--            <i class="fa fa-credit-card icon"></i>-->
+        <label for="credit" >Credit Card
+            <i class="fas fa-credit-card fa-2x"></i>
+
+        </label>
         <input type="radio" name="payment" id="paypal">
-        <label for="paypal" >PayPal</label>
+        <label for="paypal" >PayPal
+            <i class="fab fa-paypal fa-2x"></i>
+        </label>
 
         <h4 class="voucher">Voucher</h4>
         <input class="enter_code" type="text" placeholder="Enter Voucher Code">
         <button class="apply">Apply</button>
 
-        <h4>Order Summary</h4>
+        <h4 style="font-weight: bold">Order Summary:</h4>
         <div style="float:left;">
             <h5>Subtotal(4 Items) :</h5>
             <h5>Shipping Fee:</h5>
+            <h5>Voucher:</h5>
         </div>
         <div style="float:right;">
             <h5>$200.00</h5>
             <h5>$20.00</h5>
+            <h5>$10.00</h5>
         </div>
         <div class="bar">
         </div>
         <div>
             <h5 style="float: left">Total:</h5>
-            <h5 style="float:right;">$220.00</h5>
+            <h5 style="float:right;">$210.00</h5>
         </div>
         <div class="order">
-            <button class="order_now">ORDER NOW<button>
+            <button class="order_now">ORDER NOW</button>
         </div>
         </div>
 
