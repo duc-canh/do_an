@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../css/footer.css" type="text/css">
     <link rel="stylesheet" href="../css/header.css" type="text/css">
     <link rel="stylesheet" href="../css/style2.css" type="text/css">
+    <link rel="stylesheet" href="../css/comment.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
@@ -73,105 +74,142 @@
     <h2 class="titlepd">Related Products</h2>
 </div>
 
-<!--related products-->
+<!--more details-->
 <div class="containerb">
-    <div class="related-product">
-        <div class="row">
-            <div class="col-4">
-                <img src="../images/product-3.jpg">
-            </div>
-            <div class="product-info">
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h3>Made:</h3>
-                <h3>Material:</h3>
-                <h3>Size:</h3>
-                <h3>Price:</h3>
-            </div>
-            <div class="col-4">
-                <img src="../images/product-3.jpg">
-            </div>
-            <div class="product-info">
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h3>Made:</h3>
-                <h3>Material:</h3>
-                <h3>Size:</h3>
-                <h3>Price:</h3>
-            </div>
-        </div>
-    </div>
+    <table border="0" class="more-details">
+        <tr>
+            <th rowspan="6">PRODUCT DETAILS</th>
+            <td>Turn up the texture</td>
+        </tr>
+        <tr>
+            <td>Plain design</td>
+        </tr>
+        <tr>
+            <td>V-neck </td>
+        </tr>
+        <tr>
+            <td>Drop shoulders</td>
+        </tr>
+        <tr>
+            <td>Oversized fit</td>
+        </tr>
+        <tr>
+            <td>Relaxed and roomy</td>
+        </tr>
+    </table>
+    <table border="0" class="more-details">
+        <tr>
+            <th>PRODUCT CODE</th>
+            <td>1901301</td>
+        </tr>
+    </table>
 </div>
-
 <!--Rate-->
-<div class="small-container">
-    <div class="comment">
-        <h2 class="titlepd">Rated</h2>
-        <h3>Leave Us a Comment</h3>
-        <div class="rate">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-        </div>
-        <section id="wrapper">
-            <div class="box">
-<!--                <div class="row">-->
-                    <div class="col-10">
-                        <div class="comment">
-                            <p v-for="items in item" v-text="items"></p>
+<section>
+    <div class="containerb">
+        <div class="content">
+            <h4>(6) Readers Comments</h4>
+            <div id="reader">
+                <ol>
+                    <li>
+                        <div class="comment_box"> <a href="#"> <img src="../images/avatar.jpg" alt="avatar"> </a>
+                            <div class="inside_comment">
+                                <div class="comment-meta">
+                                    <div class="commentsuser">Jone</div>
+                                    <div class="comment_date">September 27, 2021 at 5:00 am</div>
+                                </div>
+                            </div>
+                            <div class="comment-body">
+                                <p>Great blog right here! Also your website quite a bit up fast! What web host are you the use of? Can I am getting your affiliate link for your host? I want my site loaded up as fast as yours lol.</p>
+                            </div>
+                            <div class="reply"> <a href="#">Reply</a> </div>
                         </div>
-                    </div>
-<!--                </div>-->
-                <div class="row">
-                    <div class="col-6">
-                        <textarea type="text" class="input" placeholder="Your Comment Here" v-model="newItem" @keyup.enter="addItem()"></textarea>
-                        <button v-on:click="addItem()" class='btn' type="submit">Comment</button>
-                    </div>
-                </div>
+                        <ul class="children">
+                            <li>
+                                <!--Comment Box 2-->
+                                <div class="comment_box"> <a href="#"> <img src="../images/avatar.jpg" alt="avatar"> </a>
+                                    <div class="inside_comment">
+                                        <div class="comment-meta">
+                                            <div class="commentsuser">Jack</div>
+                                            <div class="comment_date">September 27, 2021 at 5:15 am</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p>Great blog right here! Also your website quite a bit up fast! What web host are you the use of? Can I am getting your affiliate link for your host? I want my site loaded up as fast as yours lol.</p>
+                                    </div>
+                                    <div class="reply"> <a href="#">Reply</a> </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="children">
+                            <li>
+                                <!--Comment Box 2-->
+                                <div class="comment_box"> <a href="#"> <img src="../images/avatar.jpg" alt="avatar"> </a>
+                                    <div class="inside_comment">
+                                        <div class="comment-meta">
+                                            <div class="commentsuser">Rat</div>
+                                            <div class="comment_date">September 27, 2021 at 6:00 am</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p>Great blog right here! Also your website quite a bit up fast! What web host are you the use of? Can I am getting your affiliate link for your host? I want my site loaded up as fast as yours lol.</p>
+                                    </div>
+                                    <div class="reply"> <a href="#">Reply</a> </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="comment_box"> <a href="#"> <img src="../images/avatar.jpg" alt="avatar"> </a>
+                            <div class="inside_comment">
+                                <div class="comment-meta">
+                                    <div class="commentsuser">Clair</div>
+                                    <div class="comment_date">September 27, 2021 at 6:35 am</div>
+                                </div>
+                            </div>
+                            <div class="comment-body">
+                                <p>Great blog right here! Also your website quite a bit up fast! What web host are you the use of? Can I am getting your affiliate link for your host? I want my site loaded up as fast as yours lol.</p>
+                            </div>
+                            <div class="reply"> <a href="#">Reply</a> </div>
+                        </div>
+                        <ul class="children">
+                            <li>
+                                <!--Comment Box 2-->
+                                <div class="comment_box"> <a href="#"> <img src="../images/avatar.jpg" alt="avatar"> </a>
+                                    <div class="inside_comment">
+                                        <div class="comment-meta">
+                                            <div class="commentsuser">Micheal</div>
+                                            <div class="comment_date">September 27, 2021 at 6:55 am</div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p>Great blog right here! Also your website quite a bit up fast! What web host are you the use of? Can I am getting your affiliate link for your host? I want my site loaded up as fast as yours lol.</p>
+                                    </div>
+                                    <div class="reply"> <a href="#">Reply</a> </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="comment_box"> <a href="#"> <img src="../images/avatar.jpg" alt="avatar"> </a>
+                            <div class="inside_comment">
+                                <div class="comment-meta">
+                                    <div class="commentsuser">Jason</div>
+                                    <div class="comment_date">September 27, 2021 at 7:00 am</div>
+                                </div>
+                            </div>
+                            <div class="comment-body">
+                                <p>Great blog right here! Also your website quite a bit up fast! What web host are you the use of? Can I am getting your affiliate link for your host? I want my site loaded up as fast as yours lol.</p>
+                            </div>
+                            <div class="reply"> <a href="#">Reply</a> </div>
+                        </div>
+                    </li>
+                </ol>
             </div>
-        </section>
-
-
-
-
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-        <script>
-            $(document).ready(function(){
-
-                $(".btn-box").on('click', function(){
-                    $(".comment").addClass("afterText");
-                });
-                $("textarea").on('keyup.enter', function(){
-                    $(".comment").addClass("afterText");
-                });
-            });
-
-            new Vue({
-                el: "#wrapper",
-                data:{
-                    newItem: '',
-                    item: [],
-                },
-                methods:{
-                    addItem  (){
-                        this.item.push(this.newItem);
-                        this.newItem = "";
-                    }
-                }
-
-            });
-        </script>
+        </div>
     </div>
-</div>
+</section>
+
 <!--Featured product-->
 
 <div class="small-container">
