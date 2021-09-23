@@ -543,17 +543,15 @@ button:hover{
     height: 30px;
     font-weight: bolder;
     color: white;
+}
 
+.shipping label{
+    text-align: center;
+    font-size: 12px;
 }
-.fa-paypal{
-    margin-left: 30px;
-    color: blue;
+.shipping img{
+    margin-left: 5px;
 }
-.fa-credit-card{
-    margin-left: 30px;
-    color: #ff523b;
-}
-.fa-money-bill-wave{
-    margin-left: 30px;
-    color: #ff523b;
+.payment img{
+    margin-left: 5px;
 }

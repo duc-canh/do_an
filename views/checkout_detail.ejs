@@ -81,6 +81,7 @@
                     <div class="save_info">
                         <input type="checkbox"> Save contact info for later
                     </div>
+                    <br>
                 </div>
             </form>
     </div>
@@ -89,27 +90,45 @@
             <h4 style="font-weight: bolder">2.Shipping Method</h4>
 
             <input type="radio" name="shipping" id="ems" checked>
-            <label for="ems">(EMS) Express Mail Service ($20.00)</label>
+            <label for="ems">(EMS) Express Mail Service ($20.00)
+                <img style="float: right" src="../images/ems.png" width="30%">
+            </label>
             <input type="radio" name="shipping" id="ghn">
-            <label for="ghn">(GHN) Giao Hang Nhanh ($20.00)</label>
+            <label for="ghn">(GHN) Giao Hang Nhanh ($20.00)
+                <img src="../images/ghn.png" width="30%">
+
+            </label>
             <input type="radio" name="shipping" id="vnpost">
-            <label for="vnpost">VN Post ($15.00)</label><br>
+            <label for="vnpost">VN Post ($15.00)
+                <img style="margin-right: 0px" src="../images/vnpost.png" width="30%">
+
+
+            </label>
+        <input type="radio" name="shipping" id="fedex">
+        <label for="fedex">(FED) Federal Express ($25.00)
+            <img style="margin-right: 0px" src="../images/fedex.png" width="30%">
+        </label>
+        <br>
         </div>
 
     <div class="payment method col-md-4">
         <h4 style="font-weight: bolder">3.Payment Method</h4>
         <input type="radio" name="payment" checked="checked" id="cash">
         <label for="cash">Cash On Delivery
-            <i class="fas fa-money-bill-wave fa-2x"></i>
+            <img src="../images/cashondelivery.png" width="15%">
+<!--            <i class="fas fa-money-bill-wave fa-2x"></i>-->
         </label>
         <input type="radio" name="payment" id="credit">
         <label for="credit" >Credit Card
-            <i class="fas fa-credit-card fa-2x"></i>
+            <img src="../images/credit.png" width="40%">
+<!--            <i class="fas fa-credit-card fa-2x"></i>-->
 
         </label>
         <input type="radio" name="payment" id="paypal">
         <label for="paypal" >PayPal
-            <i class="fab fa-paypal fa-2x"></i>
+            <img src="../images/logo-paypal.png.png" width="30%">
+
+<!--            <i class="fab fa-paypal fa-2x"></i>-->
         </label>
 
         <h4 class="voucher">Voucher</h4>
@@ -134,8 +153,10 @@
             <h5 style="float:right;">$210.00</h5>
         </div>
         <div class="order">
-            <button class="order_now">ORDER NOW</button>
+            <button class="order_now">ORDER NOW
+            </button>
         </div>
+        <br>
         </div>
 
     </div>
