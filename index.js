@@ -28,7 +28,7 @@ app.get("/product-cart",function (req,res){ // trang chu
 });
 app.get("/products",function (req,res){ // trang chu
     //res.send("Trang chu");
-    var kw = req.query.abc||"";
+    var kw = req.query.txt||"";
     var txt_sql = "select * from eSanPham where TenSP like '%"+kw+"%';";
     sql.query(txt_sql,function (err,rs){ // callback
         if(err) res.status(404).send('Not found?');
