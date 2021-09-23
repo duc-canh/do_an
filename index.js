@@ -93,3 +93,7 @@ app.get("/khach-hang",function (req,res){
     })
 });
 
+app.get("/test",function (req,res) { // trang chu
+    //res.send("Trang chu");
+    res.render("test")
+});
