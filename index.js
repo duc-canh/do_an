@@ -16,18 +16,14 @@ app.get("/",function (req,res){ // trang chu
             hanghoa:rs.recordset
         });// rows.recordset : 1 array, mỗi element là 1 object từ table
     })
-    //res.render("home")
 });
-app.get("/cart-items",function (req,res){ // trang chu
-    //res.send("Trang chu");
+app.get("/cart-items",function (req,res){
     res.render("cart-items")
 });
-app.get("/product-cart",function (req,res){ // trang chu
-    //res.send("Trang chu");
+app.get("/product-cart",function (req,res){
     res.render("product-cart")
 });
-app.get("/products",function (req,res){ // trang chu
-    //res.send("Trang chu");
+app.get("/products",function (req,res){
     var kw = req.query.txt||"";
     var txt_sql = "select * from eSanPham where TenSP like '%"+kw+"%';";
     sql.query(txt_sql,function (err,rs){ // callback
@@ -38,11 +34,10 @@ app.get("/products",function (req,res){ // trang chu
     })
     //res.render("products")
 });
-app.get("/account",function (req,res) { // trang chu
-    //res.send("Trang chu");
+app.get("/account",function (req,res) {
     res.render("Account")
 });
-app.get("/product-details",function (req,res) { // trang chu
+app.get("/product-details",function (req,res) {
     var id = req.query.id;
     var txt_sql = "select * from eSanPham where ID = "+id+";";
     sql.query(txt_sql,function (err,rs){
@@ -54,16 +49,13 @@ app.get("/product-details",function (req,res) { // trang chu
         }else res.status(404).send('Not found?');
     })
 });
-app.get("/contact",function (req,res) { // trang chu
-    //res.send("Trang chu");
+app.get("/contact",function (req,res) {
     res.render("contact")
 });
-app.get("/about",function (req,res) { // trang chu
-    //res.send("Trang chu");
+app.get("/about",function (req,res) {
     res.render("about")
 });
-app.get("/checkout",function (req,res) { // trang chu
-    //res.send("Trang chu");
+app.get("/checkout",function (req,res) {
     res.render("checkout_detail")
 });
 var mssql = require("mssql");
@@ -91,9 +83,4 @@ app.get("/khach-hang",function (req,res){
             hanghoa:rs.recordset
         });// rows.recordset : 1 array, mỗi element là 1 object từ table
     })
-});
-
-app.get("/test",function (req,res) { // trang chu
-    //res.send("Trang chu");
-    res.render("test")
 });
