@@ -43,7 +43,7 @@ app.get("/account",function (req,res) { // trang chu
     res.render("Account")
 });
 app.get("/product-details",function (req,res) { // trang chu
-    var id = req.query.id;
+    var id = req.query.id||"";
     var txt_sql = "select * from eSanPham where ID = "+id+";";
     sql.query(txt_sql,function (err,rs){
         if(err) res.send(err);
