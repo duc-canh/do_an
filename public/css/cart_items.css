@@ -589,6 +589,9 @@ button:hover{
     width: 30%;
     height: 30%;
 }
-.oka{
-    margin-top: 111px;
+/*.oka{*/
+/*    margin-top: 111px;*/
+/*}*/
+#popup{
+    text-align: center;
 }
