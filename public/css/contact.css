@@ -7,11 +7,7 @@
 }
 
 .containerct{
-    width: 90%;
-    background: #fff;
-    border-radius: 6px;
     padding: 20px 0px 60px 0px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .containerct .contentct{
     display: flex;
@@ -53,8 +49,18 @@
 }
 .contentct.left-sidect .detailsct .text-one,
 .contentct .left-sidect .detailsct .text-two{
-    font-size: 14px;
-    color: #afafb6;
+    font-size: 16px;
+    color: #ff523b;
+}
+.text-email a:link{
+    text-decoration: none;
+    color: #ff523b;
+    font-weight: 600;
+    font-size: 16px;
+}
+.text-email a:hover{
+    color: #eb2f06;
+    font-weight: bolder;
 }
 .containerct .contentct .right-sidect{
     width: 75%;
@@ -156,6 +162,13 @@
         margin-left: 0;
     }
 }
-
+.map{
+    margin-bottom: 200px;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    height: 500px;
+}
 
 /*footer*/
