@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="../css/footer.css" type="text/css">
     <link rel="stylesheet" href="../css/header.css" type="text/css">
     <link rel="stylesheet" href="../css/style2.css" type="text/css">
-    <link rel="stylesheet" href="../css/comment.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
@@ -33,20 +32,6 @@
     <div class="row">
         <div class="col-2">
             <img src="<%= p.Img %>" width="100%" id="ProductImg">
-            <div class="small-img-row">
-                <div class="small-img-col">
-                    <img src="../images/gallery-1.jpg" width="100%" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="../images/gallery-2.jpg" width="100%" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="../images/gallery-3.jpg" width="100%" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="../images/gallery-4.jpg" width="100%" class="small-img">
-                </div>
-            </div>
         </div>
         <div class="col-2">
             <p>Home / T-Shirt</p>
@@ -60,155 +45,78 @@
                 <option>Medium</option>
                 <option>Small</option>
             </select>
-            <input type="number" value="1" min="1">
+            <input style="margin-left: 15px" onclick="var result = document.getElementById('quantity');
+                var qty = result.value; if( !isNaN(qty) &amp; qty > 1 ) result.value--;return false;" type='button' value='-' />
+            <input id='quantity' min='1' name='quantity' type='text' value='1' />
+            <input onclick="var result = document.getElementById('quantity');
+                 var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' />
             <a href="" class="btn">Add To Cart</a>
 
-            <h3>Product Details <i class="fa fa-indent"></i></h3>
-            <br>
+            <p><b>Description</b></p>
             <p><%= p.MoTa %></p>
+            <table border="0" class="more-details">
+                <tr>
+                    <th rowspan="6"><p>Product Details</p></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="0" class="more-details">
+                <tr>
+                    <th><p>Product Code</p></th>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="0" class="more-details">
+                <tr>
+                    <th><p>Brand</p></th>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="0" class="more-details">
+                <tr>
+                    <th rowspan="2"><p>Size & Fit</p></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="0" class="more-details">
+                <tr>
+                    <th><p>Look After Me</p></th>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="0" class="more-details">
+                <tr>
+                    <th rowspan="3"><p>About Me</p></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
-<!--    tittle    -->
-<div class="containerb">
-    <h2 class="titlepd">Related Products</h2>
-</div>
-
-<!--more details-->
-<div class="containerb">
-    <table border="0" class="more-details">
-        <tr>
-            <th rowspan="6">PRODUCT DETAILS</th>
-            <td>Turn up the texture</td>
-        </tr>
-        <tr>
-            <td>Plain design</td>
-        </tr>
-        <tr>
-            <td>V-neck </td>
-        </tr>
-        <tr>
-            <td>Drop shoulders</td>
-        </tr>
-        <tr>
-            <td>Oversized fit</td>
-        </tr>
-        <tr>
-            <td>Relaxed and roomy</td>
-        </tr>
-    </table>
-    <table border="0" class="more-details">
-        <tr>
-            <th>PRODUCT CODE</th>
-            <td>1901301</td>
-        </tr>
-    </table>
-</div>
-<!--Rate-->
-<section>
-    <div class="containerb">
-        <div class="content">
-            <h4>(6) Readers Comments</h4>
-            <div id="reader">
-                <ol>
-                    <li>
-                        <div class="comment_box"> <a href="#"> <img src="../images/avatar.jpg" alt="avatar"> </a>
-                            <div class="inside_comment">
-                                <div class="comment-meta">
-                                    <div class="commentsuser">Jone</div>
-                                    <div class="comment_date">September 27, 2021 at 5:00 am</div>
-                                </div>
-                            </div>
-                            <div class="comment-body">
-                                <p>Eye-catching interface, beautiful clothes, comfortable wearing, good.</p>
-                            </div>
-                            <div class="reply"> <a href="#">Reply</a> </div>
-                        </div>
-                        <ul class="children">
-                            <li>
-                                <!--Comment Box 2-->
-                                <div class="comment_box"> <a href="#"> <img src="../images/avatar.jpg" alt="avatar"> </a>
-                                    <div class="inside_comment">
-                                        <div class="comment-meta">
-                                            <div class="commentsuser">Jack</div>
-                                            <div class="comment_date">September 27, 2021 at 5:15 am</div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-body">
-                                        <p>should add more options</p>
-                                    </div>
-                                    <div class="reply"> <a href="#">Reply</a> </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="children">
-                            <li>
-                                <!--Comment Box 2-->
-                                <div class="comment_box"> <a href="#"> <img src="../images/avatar.jpg" alt="avatar"> </a>
-                                    <div class="inside_comment">
-                                        <div class="comment-meta">
-                                            <div class="commentsuser">Rat</div>
-                                            <div class="comment_date">September 27, 2021 at 6:00 am</div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-body">
-                                        <p>Great idea</p>
-                                    </div>
-                                    <div class="reply"> <a href="#">Reply</a> </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="comment_box"> <a href="#"> <img src="../images/avatar.jpg" alt="avatar"> </a>
-                            <div class="inside_comment">
-                                <div class="comment-meta">
-                                    <div class="commentsuser">Clair</div>
-                                    <div class="comment_date">September 27, 2021 at 6:35 am</div>
-                                </div>
-                            </div>
-                            <div class="comment-body">
-                                <p>slow delivery, need improvement </p>
-                            </div>
-                            <div class="reply"> <a href="#">Reply</a> </div>
-                        </div>
-                        <ul class="children">
-                            <li>
-                                <!--Comment Box 2-->
-                                <div class="comment_box"> <a href="#"> <img src="../images/avatar.jpg" alt="avatar"> </a>
-                                    <div class="inside_comment">
-                                        <div class="comment-meta">
-                                            <div class="commentsuser">Micheal</div>
-                                            <div class="comment_date">September 27, 2021 at 6:55 am</div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-body">
-                                        <p>i think it's ok </p>
-                                    </div>
-                                    <div class="reply"> <a href="#">Reply</a> </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <div class="comment_box"> <a href="#"> <img src="../images/avatar.jpg" alt="avatar"> </a>
-                            <div class="inside_comment">
-                                <div class="comment-meta">
-                                    <div class="commentsuser">Jason</div>
-                                    <div class="comment_date">September 27, 2021 at 7:00 am</div>
-                                </div>
-                            </div>
-                            <div class="comment-body">
-                                <p>I will share this page with my friends </p>
-                            </div>
-                            <div class="reply"> <a href="#">Reply</a> </div>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!--Featured product-->
 

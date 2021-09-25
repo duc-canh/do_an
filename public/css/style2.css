@@ -59,22 +59,19 @@ input:focus{
     font-size: 20px;
     padding-left: 103px;
 }
-.rate {
-    unicode-bidi: bidi-override;
-    direction: rtl;
+.more-details{
+    margin-top: 20px;
+}
+.more-details table{
     text-align: left;
-    color: #ff523b;
 }
-.rate > span {
-    display: inline-block;
-    position: relative;
-    width: 1.1em;
-    font-size: 30px;
+.more-details th{
+    width: 250px;
+    text-align: left;
 }
-.rate > span:hover:before,
-.rate > span:hover ~ span:before {
-    content: "\2605";
-    position: absolute;
+.more-details td{
+    width: 300px;
+    text-align: left;
 }
 /*compare products*/
 /*.row-1{*/

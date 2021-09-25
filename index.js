@@ -69,7 +69,7 @@ app.get("/checkout",function (req,res) { // trang chu
 var mssql = require("mssql");
 
 var ConnectionConfig = {
-    server: 'DESKTOP-V4TRK5T',
+    server: 'DESKTOP-H15GPCD',
     authentication: { type: 'default', options: { userName: 'sa', password: '123a' } },
     database:'garments',
     options: { encrypt:false }}
