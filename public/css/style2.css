@@ -79,6 +79,47 @@ input:focus{
     width: 300px;
     text-align: left;
 }
+.comment{
+    border: 1px solid #ff523b;
+    border-radius: 5px;
+    width: 800px;
+    height: 130px;
+    margin-top: 10px;
+}
+.comment-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.avatar{
+    width: 30%;
+    text-align: left;
+    height: 30px;
+}
+.comment-date{
+    width: 70%;
+    text-align: right;
+    height: 30px;
+}
+.avatar img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.comment-button{
+    text-align: right;
+    height: 30px;
+}
+.comment-button .btn{
+    margin: 0;
+    border-radius: 6px;
+}
+.comment-reply{
+    border: 1px solid #ff523b;
+    border-radius: 5px;
+    width: 800px;
+    height: 110px;
+    margin: 10px 0 0 70px;
+}
 /*compare products*/
 /*.row-1{*/
 /*    display: flex;*/
