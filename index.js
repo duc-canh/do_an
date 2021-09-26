@@ -69,9 +69,9 @@ app.get("/checkout",function (req,res) { // trang chu
 var mssql = require("mssql");
 
 var ConnectionConfig = {
-    server: 'DESKTOP-H15GPCD',
+    server: 'DESKTOP-V4TRK5T',
     authentication: { type: 'default', options: { userName: 'sa', password: '123a' } },
-    database:'garments',
+    database:'doann',
     options: { encrypt:false }}
 
 // ket noi voi database

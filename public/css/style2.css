@@ -1,3 +1,9 @@
+.col-2 span{
+    color: #777;
+    font-size: 15px;
+    font-weight: normal;
+}
+
 .single-product{
     margin-top: 50px;
 }
