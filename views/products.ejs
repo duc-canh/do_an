@@ -20,21 +20,24 @@
     </div>
 </div>
 
+
+
 <div class="container products" style="margin-bottom: 100px">
-    <div class="row">
-        <select class="select-sort" name="abc">
-            <option>Default Sorting</option>
-            <option>Sort By Adidas</option>
-            <option>Sort By Nike</option>
-            <option>Sort By Dior</option>
-            <option>Sort By Sale</option>
-            <option>Sort By Price</option>
-            <option>Sort By Rating</option>
-        </select>
-    </div>
+
 </div>
 <div class="container products" style="margin-bottom: 100px">
-    <h2 style="font-weight: bolder">TOP SELLER</h2>
+    <div class="row col-md-12">
+        <h2 class="col-md-9" style="font-weight: bolder">TOP SELLER</h2>
+        <div class="seach col-md-3"><form action="/thuong-hieu" method="get">
+                <div class="box-seach">
+                    <input class="sr" type="text" name="keyworda"placeholder="search for manufacturer"/>
+                    <button type="submit" class="glyphicon glyphicon-search"></button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
     <div class="col-md-12">
         <% for(i=0;i<8;i++){ %>
             <div class="">

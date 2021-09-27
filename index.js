@@ -93,7 +93,14 @@ app.get("/khach-hang",function (req,res){
     })
 });
 
-app.get("/test",function (req,res) { // trang chu
+app.get("/thuong-hieu",function (req,res) { // trang chu
     //res.send("Trang chu");
-    res.render("test")
+    var kw = req.query.keyworda||"";
+    var txt_sql = "select * from eSanPham inner join Nhasx on eSanPham.NhasxID = Nhasx.ID where TenNSX like '%"+kw+"%';";
+    sql.query(txt_sql,function (err,rs){ // callback
+        if(err) res.status(404).send('Not found?');
+        else res.render("test",{
+            hanghoa:rs.recordset
+        });// rows.recordset : 1 array, mỗi element là 1 object từ table
+    })
 });
