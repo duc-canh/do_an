@@ -45,11 +45,11 @@
                         <a href="#">Forgot passsword</a>
                     </form>
 
-                    <form id="RegForm">
-                        <input type="text" placeholder="Username"/>
-                        <input type="email" placeholder="Email"/>
-                        <input type="password" placeholder="Password"/>
-                        <button type="submit" class="btn">Register</button>
+                    <form id="RegForm" onSubmit="event.preventDefault()">
+                        <input id="use" type="text" placeholder="Username"/>
+                        <input id="email" type="email" placeholder="Email"/>
+                        <input id="pass" type="password" placeholder="Password"/>
+                        <button id="btn-submit1" class="btn" onclick="reg()">Register</button>
                     </form>
                 </div>
             </div>
