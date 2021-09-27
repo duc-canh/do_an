@@ -37,3 +37,6 @@ function validation(){
     }
 
 }
+function reg(){
+    swal("Good job!", "You clicked the button!", "success");
+}
