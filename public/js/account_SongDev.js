@@ -20,3 +20,23 @@ function register(){
 
 
 //
+function validation(){
+    var username = 'admin';
+    var password = '123123';
+
+    var userName = document.getElementById('username').value;
+    var passWord = document.getElementById('password').value;
+
+
+
+    if ((username == userName) && (password == passWord)) {
+        swal("Good job", " you success to login", "success");
+    }
+    else {
+        sweetAlert("Oops", "Username or Password was wrong", "error");
+    }
+
+}
+function reg(){
+    swal("Good job!", "You clicked the button!", "success");
+}
