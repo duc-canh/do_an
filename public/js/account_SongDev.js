@@ -33,7 +33,7 @@ function validation(){
         swal("Good job", " you success to login", "success");
     }
     else {
-        sweetAlert("Oops", "Usernam or Password was wrong", "error");
+        sweetAlert("Oops", "Username or Password was wrong", "error");
     }
 
 }
