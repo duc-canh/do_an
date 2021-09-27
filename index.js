@@ -28,7 +28,15 @@ app.get("/product-cart",function (req,res){ // trang chu
 });
 app.get("/products",function (req,res){ // trang chu
     //res.send("Trang chu");
-    res.render("products")
+    var kw = req.query.txt||"";
+    var txt_sql = "select * from eSanPham where TenSP like '%"+kw+"%';";
+    sql.query(txt_sql,function (err,rs){ // callback
+        if(err) res.status(404).send('Not found?');
+        else res.render("products",{
+            hanghoa:rs.recordset
+        });// rows.recordset : 1 array, mỗi element là 1 object từ table
+    })
+    //res.render("products")
 });
 app.get("/account",function (req,res) { // trang chu
     //res.send("Trang chu");
@@ -63,7 +71,7 @@ var mssql = require("mssql");
 var ConnectionConfig = {
     server: 'DESKTOP-V4TRK5T',
     authentication: { type: 'default', options: { userName: 'sa', password: '123a' } },
-    database:'garments',
+    database:'doann',
     options: { encrypt:false }}
 
 // ket noi voi database
@@ -85,3 +93,14 @@ app.get("/khach-hang",function (req,res){
     })
 });
 
+app.get("/thuong-hieu",function (req,res) { // trang chu
+    //res.send("Trang chu");
+    var kw = req.query.keyworda||"";
+    var txt_sql = "select * from eSanPham inner join Nhasx on eSanPham.NhasxID = Nhasx.ID where TenNSX like '%"+kw+"%';";
+    sql.query(txt_sql,function (err,rs){ // callback
+        if(err) res.status(404).send('Not found?');
+        else res.render("test",{
+            hanghoa:rs.recordset
+        });// rows.recordset : 1 array, mỗi element là 1 object từ table
+    })
+});

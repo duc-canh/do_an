@@ -5,6 +5,50 @@
     font-family: 'Poppins',sans-serif;
     text-decoration: none;
 }
+h3 a{
+    color: #eb2f06;
+}
+h3 a:hover{
+    text-decoration: none;
+}
+#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+
+}
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*text-align: center;*/
+    width: 600px;
+    padding: 30px;
+    box-shadow: 0px 5px 30px rgba(0,0,0,30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+#popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+#popup h3{
+    color: #ff523b;
+}
+#popup img{
+    width: 30%;
+    height: 30%;
+}
+/*.oka{*/
+/*    margin-top: 111px;*/
+/*}*/
+#popup{
+    text-align: center;
+}
 
 /**/
 .headera{

@@ -7,11 +7,7 @@
 }
 
 .containerct{
-    width: 90%;
-    background: #fff;
-    border-radius: 6px;
     padding: 20px 0px 60px 0px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .containerct .contentct{
     display: flex;
@@ -44,7 +40,7 @@
 }
 .contentct .left-sidect .detailsct i{
     font-size: 30px;
-    color: #3e2093;
+    color: #ff523b;
     margin-bottom: 10px;
 }
 .contentct .left-sidect .detailsct .topic{
@@ -53,8 +49,18 @@
 }
 .contentct.left-sidect .detailsct .text-one,
 .contentct .left-sidect .detailsct .text-two{
-    font-size: 14px;
-    color: #afafb6;
+    font-size: 16px;
+    color: #ff523b;
+}
+.text-email a:link{
+    text-decoration: none;
+    color: #ff523b;
+    font-weight: 600;
+    font-size: 16px;
+}
+.text-email a:hover{
+    color: #eb2f06;
+    font-weight: bolder;
 }
 .containerct .contentct .right-sidect{
     width: 75%;
@@ -63,7 +69,7 @@
 .contentct .right-sidect .topic-text{
     font-size: 23px;
     font-weight: 600;
-    color: #3e2093;
+    color: #ff523b;
 }
 .right-sidect .input-box{
     height: 50px;
@@ -99,12 +105,21 @@
     border: none;
     padding: 8px 16px;
     border-radius: 6px;
-    background: #3e2093;
+    color: #ff523b;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.button input[type="button"]:hover{
-    background: #5029bc;
+.button_send_now:hover{
+    transform: scale(1.1);
+}
+.button_send_now{
+    background-color: #ff523b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100px;
+    height: 35px;
 }
 
 @media (max-width: 950px) {
@@ -146,6 +161,14 @@
         width: 100%;
         margin-left: 0;
     }
+}
+.map{
+    margin-bottom: 90px;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    height: 500px;
 }
 
 /*footer*/

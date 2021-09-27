@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/contact.css" type="text/css">
     <link rel="stylesheet" href="../css/footer.css" type="text/css">
     <link rel="stylesheet" href="../css/header.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 </head>
@@ -19,25 +20,27 @@
     </div>
 </div>
 
-<div class="containerct ">
+
+<div class="container containerct ">
     <div class="contentct">
         <div class="left-sidect">
             <div class="address detailsct">
                 <i class="fas fa-map-marker-alt"></i>
-                <div class="topicct">Address</div>
-                <div class="text-one">Surkhet, NP12</div>
-                <div class="text-two">Birendranagar 06</div>
+                <div class="topic">Address</div>
+                <div class="text-one">Cau Giay,Ha Noi</div>
+                <div class="text-two">Ton That Thuyet 08</div>
             </div>
             <div class="phone detailsct">
                 <i class="fas fa-phone-alt"></i>
                 <div class="topic">Phone</div>
-                <div class="text-two">+0098 9893 5647</div>
+                <div class="text-two">+84 4953 0134</div>
             </div>
             <div class="email detailsct">
                 <i class="fas fa-envelope"></i>
                 <div class="topic">Email</div>
-                <div class="text-two">graciousgarments@gmail.com</div>
-
+                <!--link to send email-->
+                <div class="text-email"><a  onClick="javascript:window.open('https://mail.google.com/mail/u/0/?tab=rm#inbox?compose=GFrJzkNdFrqhqHzXTkpbqKMzgkHMBXMVrSFzcFpVXrrDcBKdxjnTcrczKhvdVBjVdmJD', 'my-window');event.preventDefault()" href="#">Graciousgarments@gmail.com</a>
+                </div>
             </div>
         </div>
         <div class="right-sidect">
@@ -45,22 +48,26 @@
             <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
             <form action="#">
                 <div class="input-box">
-                    <input type="text" placeholder="Enter your name">
+                    <input type="text" placeholder="Enter your name" required>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Enter your phone">
+                    <input type="tel" placeholder="Enter your phone" required>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Enter your email">
+                    <input type="email" placeholder="Enter your email" required>
                 </div>
                 <div class="input-box message-box">
-                    <textarea placeholder="Enter your message"></textarea>
+                    <textarea placeholder="Enter your message" required></textarea>
                 </div>
-                <div class="button">
-                    <input type="button" value="Send Now" >
-                </div>
+                <!--                <div class="button">-->
+                <!--                    <input type="button" value="Send Now" >-->
+                <!--                </div>-->
+                <button class="button_send_now">Send Now</button>
             </form>
         </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.0968414913427!2d105.78049781424535!3d21.028810793154072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4cd0c66f05%3A0xea31563511af2e54!2zOCBUw7RuIFRo4bqldCBUaHV54bq_dCwgTeG7uSDEkMOsbmgsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1632561573663!5m2!1svi!2s" width="1000" height="500" style="border: 4px outset #eeeeee" " allowfullscreen="" loading="lazy"></iframe>
     </div>
 </div>
 

@@ -1,3 +1,10 @@
+$(document).on("change",".select-sort",function (e){
+        var txt = $(this).val();
+});
+
+
+
+
 let carts= document.querySelectorAll('.btn-buy-now');
 
 let products = [

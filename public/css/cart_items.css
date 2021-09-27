@@ -3,7 +3,9 @@ body{
     font-family: 'Poppins',sans-serif;
 
 }
-
+.col-4 a{
+    color: #3d3d3d;
+}
 .img-product-fly{
     position: absolute;
     z-index: 10000000;
@@ -173,12 +175,12 @@ h4{
 .cart td{
     padding: 10px 5px;
 }
-.cart td input{
-    width: 60px;
-    height: 30px;
-    padding: 5px;
-    border-radius: 5px;
-}
+/*.cart td input{*/
+/*    width: 60px;*/
+/*    height: 30px;*/
+/*    padding: 5px;*/
+/*    border-radius: 5px;*/
+/*}*/
 .cart img{
     width: 80px;
     height: 80px;
@@ -198,7 +200,7 @@ h4{
 }
 .total-price table{
     border-top: 3px solid #ff523b;
-    max-width: 430px;
+    max-width: 48%;
 }
 .cart th:last-child{
     text-align: right;
@@ -218,9 +220,10 @@ h4{
     color: white;
     background-color: #ff523b;
     border-radius: 10px;
-    width: 45%;
+    width: 55%;
     height: 40px;
     font-size: 18px;
+    font-weight: bolder;
 }
 .check_out2{
     color: #ff523b;
@@ -238,6 +241,38 @@ h4{
     outline: 0;
     box-shadow: none;
 }
+/*buton quantity-------*/
+.button_quantity{
+    margin-left: -44px;
+}
+.minus, .plus{
+    background-color: #eeeeee;
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    font-weight: bolder;
+
+}
+#qt1,#qt2,#qt3,#qt4{
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    background-color: #eeeeee;
+    font-weight: bolder;
+}
+button{
+    border: none;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+
+
 
 
 /*--------------PROCUCTS-------------*/
@@ -404,30 +439,25 @@ h4{
     border-radius: 5px;
 }
 .bd_in h4{
-    font-weight: 700;
-    font-size: 12px;
+    font-weight: normal;
+    font-size: 13px;
 }
+.billing_address .address{
+    font-weight: normal;
+    font-size: 13px;
+}
+
 .billing_address select{
     border: 1px;
     border-radius: 5px;
     margin-left: 3px;
     height: 30px;
 }
-/*.save_address{*/
-/*    text-align: center;*/
-/*    margin-top: 25px;*/
-/*    margin-bottom: 15px;*/
-/*    align-items: center;*/
-/*    border-radius: 5px;*/
-/*    background-color: white;*/
-/*    border: 1px solid white;*/
-/*    font-weight: bold;*/
-/*    width: 100px;*/
-/*    height: 25px;*/
-/*}*/
 .save_info{
     margin-top: 15px;
     margin-bottom: 5px;
+    font-size: 16px;
+
 }
 .save_info_text{
     font-weight: normal;
@@ -494,7 +524,6 @@ h4{
     font-size: 14px;
     font-weight: 700;
     color: white;
-    /*border: 1px solid #ff0000;*/
 }
 .bar{
     clear: both;
@@ -514,5 +543,56 @@ h4{
     height: 30px;
     font-weight: bolder;
     color: white;
+}
+
+.shipping label{
+    text-align: center;
+    font-size: 12px;
+}
+.shipping img{
+    margin-left: 5px;
+}
+.payment img{
+    margin-left: 5px;
+}
+
+/*popup ordernow----------*/
+#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
 
 }
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*text-align: center;*/
+    width: 600px;
+    padding: 30px;
+    box-shadow: 0px 5px 30px rgba(0,0,0,30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+#popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+#popup h3{
+    color: #ff523b;
+}
+#popup img{
+    width: 30%;
+    height: 30%;
+}
+/*.oka{*/
+/*    margin-top: 111px;*/
+/*}*/
+#popup{
+    text-align: center;
+}
+

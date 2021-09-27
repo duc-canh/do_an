@@ -6,6 +6,29 @@
 .headera{
     background: radial-gradient(#fff,#ffd6d6);
 }
+.seach{
+    border: 2px solid #ff523b;
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+.sr{
+    border: none;
+    padding: 3px;
+}
+.sr:focus{
+    outline: none;
+}
+.box-seach{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.glyphicon{
+    background-color: white;
+    border: none;
+    color: #ff523b;
+}
 
 .containera{
     /*max-width: 1300px;*/

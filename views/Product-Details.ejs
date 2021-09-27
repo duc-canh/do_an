@@ -32,20 +32,6 @@
     <div class="row">
         <div class="col-2">
             <img src="<%= p.Img %>" width="100%" id="ProductImg">
-            <div class="small-img-row">
-                <div class="small-img-col">
-                    <img src="../images/gallery-1.jpg" width="100%" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="../images/gallery-2.jpg" width="100%" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="../images/gallery-3.jpg" width="100%" class="small-img">
-                </div>
-                <div class="small-img-col">
-                    <img src="../images/gallery-4.jpg" width="100%" class="small-img">
-                </div>
-            </div>
         </div>
         <div class="col-2">
             <p>Home / T-Shirt</p>
@@ -59,119 +45,73 @@
                 <option>Medium</option>
                 <option>Small</option>
             </select>
-            <input type="number" value="1" min="1">
+            <input style="margin-left: 15px" onclick="var result = document.getElementById('quantity');
+                var qty = result.value; if( !isNaN(qty) &amp; qty > 1 ) result.value--;return false;" type='button' value='-' />
+            <input id='quantity' min='1' name='quantity' type='text' value='1' />
+            <input onclick="var result = document.getElementById('quantity');
+                 var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' />
             <a href="" class="btn">Add To Cart</a>
 
-            <h3>Product Details <i class="fa fa-indent"></i></h3>
-            <br>
+            <p><b>Description</b></p>
             <p><%= p.MoTa %></p>
+            <table border="0" class="more-details">
+                <tr>
+                    <th rowspan="6"><p>Product Details</p></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="0" class="more-details">
+                <tr>
+                    <th><p>Product Code :<span><%= p.MaSP %></span></p></th>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="0" class="more-details">
+                <tr>
+                    <th rowspan="2"><p>Quantity available : <span><%= p.SoLuonTon %></span> </p></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="0" class="more-details">
+                <tr>
+                    <th><p>Look After Me :  <span><%= p.LuuY %> </span></p></th>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="0" class="more-details">
+                <tr>
+                    <th rowspan="3"><p>Ingredient : <span> <%= p.Vatlieu %> </span></p></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
-<!--    tittle    -->
-<div class="containerb">
-    <h2 class="titlepd">Related Products</h2>
-</div>
 
-<!--related products-->
-<div class="containerb">
-    <div class="related-product">
-        <div class="row">
-            <div class="col-4">
-                <img src="../images/product-3.jpg">
-            </div>
-            <div class="product-info">
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h3>Made:</h3>
-                <h3>Material:</h3>
-                <h3>Size:</h3>
-                <h3>Price:</h3>
-            </div>
-            <div class="col-4">
-                <img src="../images/product-3.jpg">
-            </div>
-            <div class="product-info">
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </div>
-                <h3>Made:</h3>
-                <h3>Material:</h3>
-                <h3>Size:</h3>
-                <h3>Price:</h3>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--Rate-->
-<div class="small-container">
-    <div class="comment">
-        <h2 class="titlepd">Rated</h2>
-        <h3>Leave Us a Comment</h3>
-        <div class="rate">
-            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-        </div>
-        <section id="wrapper">
-            <div class="box">
-<!--                <div class="row">-->
-                    <div class="col-10">
-                        <div class="comment">
-                            <p v-for="items in item" v-text="items"></p>
-                        </div>
-                    </div>
-<!--                </div>-->
-                <div class="row">
-                    <div class="col-6">
-                        <textarea type="text" class="input" placeholder="Your Comment Here" v-model="newItem" @keyup.enter="addItem()"></textarea>
-                        <button v-on:click="addItem()" class='btn' type="submit">Comment</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-        <script>
-            $(document).ready(function(){
-
-                $(".btn-box").on('click', function(){
-                    $(".comment").addClass("afterText");
-                });
-                $("textarea").on('keyup.enter', function(){
-                    $(".comment").addClass("afterText");
-                });
-            });
-
-            new Vue({
-                el: "#wrapper",
-                data:{
-                    newItem: '',
-                    item: [],
-                },
-                methods:{
-                    addItem  (){
-                        this.item.push(this.newItem);
-                        this.newItem = "";
-                    }
-                }
-
-            });
-        </script>
-    </div>
-</div>
 <!--Featured product-->
 
 <div class="small-container">
@@ -231,26 +171,106 @@
         </div>
     </div>
 </div>
-
+<!--comment-->
+<div class="small-container">
+    <h2>Product Reviews</h2>
+    <div class="comment">
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+        <div class="comment-row">
+            <div class="avatar">
+                <img src="../images/images_comment.jpg">
+            </div>
+            <div class="comment-date">
+                <p>1:45 AM 9/22/2021</p>
+            </div>
+        </div>
+        <div class="comment-body">
+            <p>The goods are always beautiful. Cheap price great quality</p>
+        </div>
+        <div class="comment-button">
+            <a href="#" ><button class="btn">Reply</button></a>
+        </div>
+    </div>
+    <div class="comment-reply">
+        <div class="comment-row">
+            <div class="avatar">
+                <img src="../images/images_comment.jpg">
+            </div>
+            <div class="comment-date">
+                <p>10:00 AM 9/23/2021</p>
+            </div>
+        </div>
+        <div class="comment-body">
+            <p>The goods are always beautiful. Cheap price great quality</p>
+        </div>
+        <div class="comment-button">
+            <a href="#" ><button class="btn">Reply</button></a>
+        </div>
+    </div>
+    <div class="comment-reply">
+        <div class="comment-row">
+            <div class="avatar">
+                <img src="../images/images_comment.jpg">
+            </div>
+            <div class="comment-date">
+                <p>10:00 AM 9/23/2021</p>
+            </div>
+        </div>
+        <div class="comment-body">
+            <p>The goods are always beautiful. Cheap price great quality</p>
+        </div>
+        <div class="comment-button">
+            <a href="#" ><button class="btn">Reply</button></a>
+        </div>
+    </div>
+    <div class="comment">
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+        <div class="comment-row">
+            <div class="avatar">
+                <img src="../images/images_comment.jpg">
+            </div>
+            <div class="comment-date">
+                <p>9:15 AM 9/24/2021</p>
+            </div>
+        </div>
+        <div class="comment-body">
+            <p>The goods are always beautiful. Cheap price great quality</p>
+        </div>
+        <div class="comment-button">
+            <a href="#" ><button class="btn">Reply</button></a>
+        </div>
+    </div>
+    <div class="comment-reply">
+        <div class="comment-row">
+            <div class="avatar">
+                <img src="../images/images_comment.jpg">
+            </div>
+            <div class="comment-date">
+                <p>10:00 AM 9/23/2021</p>
+            </div>
+        </div>
+        <div class="comment-body">
+            <p>The goods are always beautiful. Cheap price great quality</p>
+        </div>
+        <div class="comment-button">
+            <a href="#" ><button class="btn">Reply</button></a>
+        </div>
+    </div>
+</div>
 <!--footer-->
 <%- include("footer")%>
-<!--js for product gallery-->
-<script>
-    var ProductImg = document.getElementById("ProductImg");
-    var SmallImg = document.getElementsByClassName("small-img");
-    SmallImg[0].onclick = function (){
-        ProductImg.src = SmallImg[0].src;
-    }
-    SmallImg[1].onclick = function (){
-        ProductImg.src = SmallImg[1].src;
-    }
-    SmallImg[2].onclick = function (){
-        ProductImg.src = SmallImg[2].src;
-    }
-    SmallImg[3].onclick = function (){
-        ProductImg.src = SmallImg[3].src;
-    }
-</script>
 
 <!--js for comment-->
 
