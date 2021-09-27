@@ -32,10 +32,16 @@
                         <span id="titleReg" onclick="register()">Register</span>
                     </div>
 
-                    <form id="LoginForm">
-                        <input type="text" placeholder="Username"/>
-                        <input type="password" placeholder="Password"/>
-                        <button type="submit" class="btn">Login</button>
+                    <!--                    <form id="LoginForm">-->
+                    <!--                        <input type="text" placeholder="Username"/>-->
+                    <!--                        <input type="password" placeholder="Password"/>-->
+                    <!--                        <button type="submit" class="btn">Login</button>-->
+                    <!--                        <a href="#">Forgot passsword</a>-->
+                    <!--                    </form>-->
+                    <form id="LoginForm" onSubmit="event.preventDefault()">
+                        <input id="username"  type="text" required placeholder="Username"/>
+                        <input id="password" type="password" required placeholder="Password"/>
+                        <button id="btn-submit"  class="btn" onclick="validation()">Login</button>
                         <a href="#">Forgot passsword</a>
                     </form>
 
@@ -53,9 +59,13 @@
 <!---->
 
 <%- include("footer")%>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="../js/jquery-3.6.0.min.js"></script>
 <script src="../js/header-rs.js"></script>
 <script src="../js/header-scorll.js"></script>
 <script type="text/javascript " src="../js/account_SongDev.js"></script>
+<!--<script type="text/javascript" src="js/test_js.js"></script>-->
+
+
 </body>
 </html>
