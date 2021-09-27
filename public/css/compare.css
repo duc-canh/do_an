@@ -1,0 +1,26 @@
+.compare-product img{
+    width: 40%;
+    height: 40%;
+}
+.compare-product table{
+    margin-top: 10px;
+}
+.compare-product table th{
+    width: 150px;
+    text-align: left;
+    padding-left: 10px;
+}
+.compare-product table td{
+    width: 300px;
+    text-align: left;
+}
+.compare .row{
+    flex-wrap: nowrap;
+}
+.compare-product{
+    margin-left: 20px;
+    border: 1px solid #ff523b;
+    border-radius: 2px;
+    text-align: center;
+    padding-top: 10px;
+}
