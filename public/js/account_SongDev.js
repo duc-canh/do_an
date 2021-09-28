@@ -30,8 +30,10 @@ function validation(){
 
 
     if ((username == userName) && (password == passWord)) {
-        swal("Good job", " you success to login", "success");
-    }
+        swal("Good job", " you success to login", "success"
+        ).then(function() {
+            window.location = "http://localhost:4000/";
+        });}
     else {
         sweetAlert("Oops", "Username or Password was wrong", "error");
     }
