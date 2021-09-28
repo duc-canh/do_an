@@ -39,6 +39,7 @@ input:focus{
     margin-left: 10px;
 }
 .small-img-row{
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
 }
