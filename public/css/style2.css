@@ -83,7 +83,7 @@ input:focus{
     border: 1px solid #ff523b;
     border-radius: 5px;
     width: 800px;
-    height: 130px;
+    height: 90px;
     margin-top: 10px;
 }
 .comment-row{
@@ -117,8 +117,11 @@ input:focus{
     border: 1px solid #ff523b;
     border-radius: 5px;
     width: 800px;
-    height: 110px;
+    height: 90px;
     margin: 10px 0 0 70px;
+}
+.comment-box{
+    margin-bottom: 30px;
 }
 /*compare products*/
 /*.row-1{*/
