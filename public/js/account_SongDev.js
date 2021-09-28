@@ -30,8 +30,10 @@ function validation(){
 
 
     if ((username == userName) && (password == passWord)) {
-        swal("Good job", " you success to login", "success");
-    }
+        swal("Good job", " you success to login", "success"
+        ).then(function() {
+            window.location = "https://www.youtube.com/";
+        });}
     else {
         sweetAlert("Oops", "Username or Password was wrong", "error");
     }
