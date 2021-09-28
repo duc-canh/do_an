@@ -104,3 +104,7 @@ app.get("/thuong-hieu",function (req,res) { // trang chu
         });// rows.recordset : 1 array, mỗi element là 1 object từ table
     })
 });
+app.get("/compare",function (req,res) { // trang chu
+    //res.send("Trang chu");
+    res.render("commpare")
+});
