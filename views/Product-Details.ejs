@@ -32,7 +32,21 @@
 <div class="containerb single-product">
     <div class="row">
         <div class="col-2">
-            <img src="<%= p.Img %>" width="100%" id="ProductImg">
+            <img src="../images/gallery-1.jpg" width="100%" id="ProductImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="../images/gallery-1.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/gallery-2.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/gallery-3.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/gallery-4.jpg" width="100%" class="small-img">
+                </div>
+            </div>
         </div>
         <div class="col-2">
             <p>Home / T-Shirt</p>
@@ -46,10 +60,10 @@
                 <option>Medium</option>
                 <option>Small</option>
             </select>
-            <input style="margin-left: 15px" onclick="var result = document.getElementById('quantity');
+            <input style="margin-left: 15px;padding-right: 10px" onclick="var result = document.getElementById('quantity');
                 var qty = result.value; if( !isNaN(qty) &amp; qty > 1 ) result.value--;return false;" type='button' value='-' />
-            <input id='quantity' min='1' name='quantity' type='text' value='1' />
-            <input onclick="var result = document.getElementById('quantity');
+            <input style="padding-left: 21px" id='quantity' min='1' name='quantity' type='text' value='1' />
+            <input style="padding-right: 10px" onclick="var result = document.getElementById('quantity');
                  var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' />
             <a href="" class="btn">Add To Cart</a>
 
@@ -313,7 +327,22 @@
 </div>
 <!--footer-->
 <%- include("footer")%>
-
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+    SmallImg[0].onclick = function (){
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function (){
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function (){
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function (){
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>
 <!--js for comment-->
 
 
