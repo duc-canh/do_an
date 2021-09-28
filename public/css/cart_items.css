@@ -3,6 +3,7 @@ body{
     font-family: 'Poppins',sans-serif;
 
 }
+
 .glyphicon{
     margin-left: 10px;
 }
@@ -271,10 +272,10 @@ h4{
     background-color: #eeeeee;
     font-weight: bolder;
 }
-button{
+.order button{
     border: none;
 }
-button:hover{
+.order button:hover{
     transform: scale(1.1);
 }
 
